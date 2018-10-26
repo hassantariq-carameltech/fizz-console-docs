@@ -9,12 +9,18 @@ const ListLink = props => (
   </li>
 )
 
-export default props => (
-  <header style={{ marginBottom: `1.5rem` }}>  
-    Fizz Header in layout with all the navigation
-    <br/>
-    <ListLink to='/'>Home</ListLink>
-    <ListLink to='/what-is-fizz'>What is Fizz</ListLink>
-    <ListLink to='/overview'>Overview</ListLink>
-  </header>
-)
+export default ({ allMarkdownRemark }) => {
+  // console.log("---> here: ", data)
+  return (
+    <header style={{ marginBottom: `1.5rem` }}>  
+      Fizz Header in layout with all the navigation
+      <br/>
+      <ListLink to='/'>Home</ListLink>
+        {
+          allMarkdownRemark.edges.map(({ node }) => (
+            <ListLink key={node.id} to={node.fields.slug}>{node.frontmatter.title}</ListLink>
+          ))
+        }
+    </header>
+  )
+}
