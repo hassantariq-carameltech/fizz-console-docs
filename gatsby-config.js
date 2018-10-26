@@ -1,6 +1,11 @@
+const meta = {
+  LANGUAGES: "34",
+  LATEST: "0.3.3"
+}
+
 module.exports = {
   siteMetadata: {
-    title: `Title from siteMetadata`,
+    meta: JSON.stringify(meta)
   },
   plugins: [
     {
