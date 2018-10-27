@@ -24,6 +24,7 @@
     "react-dom": "^16.5.1",
     "react-typography": "^0.16.13",
     "typography": "^0.16.17",
+    "typography-plugin-code": "^0.16.11",
     "typography-theme-fairy-gates": "^0.15.11"
   }
 }
