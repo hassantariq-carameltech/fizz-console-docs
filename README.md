@@ -12,7 +12,8 @@ Guide for contributing to fizz documentation
 ## Contributing to documentation
 * Edit Page: Go to `src/pages/what_is_fizz`
     * Change the title from 'What is Fizz' to 'What is Fizz Docs'. It should reflect on `localhost:8000`
-    * Try adding an image and code snippet -- see `src/pages/overview.md`
+    * Try adding an 'image' and 'code snippet' -- see `src/pages/overview.md`
+    * Try adding a hyperlink -- paste `[Overview](../overview)` beneath 'What is Fizz Docs'
     * Try editing site wide meta information -- open `src/gatsby-config.js` and change the value of `LANGUAGES` to `40` 
 * Add New Page: Add a new file `my_new_page.md` in `src/pages` directory with following content. 
 ```
