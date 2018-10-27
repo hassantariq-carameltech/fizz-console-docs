@@ -3,10 +3,10 @@ Guide for contributing to fizz documentation
 
 ## Setting up on localhost
 
-  1. ```npm install --global gatsby-cli``` -- Install Gatsby
-  2. `gatsby new fizz-console-docs https://github.com/hassantariq-carameltech/fizz-console-docs.git` -- Setup Project Locally
-  3. `cd fizz-console-docs` -- Navigate to project folder
-  4. `gatsby develop` -- Run the Project
+  1. `$ npm install --global gatsby-cli` -- Install Gatsby
+  2. `$ gatsby new fizz-console-docs https://github.com/hassantariq-carameltech/fizz-console-docs.git` -- Setup Project Locally
+  3. `$ cd fizz-console-docs` -- Navigate to project folder
+  4. `$ gatsby develop` -- Run the Project
   5. Navigate to `http:localhost:8000` -- the project should appear
 
 ## Contributing to documentation
@@ -42,7 +42,7 @@ Sample description for new page
     * `$ surge` -- enter a username and password to create a free account
     * `$ gatsby build` -- build gatsby production build
     * `$ ls public` -- verify that public folder is created
-    * `surge public/` -- That's all folks. Press enter and just visit the link shown in terminal to see the sorcery
+    * `$ surge public/` -- That's all folks. Press enter and just visit the link shown in terminal to see the sorcery
 
 
 ### Todos
