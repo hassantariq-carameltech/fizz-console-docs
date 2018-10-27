@@ -14,7 +14,7 @@ Guide for contributing to fizz documentation
     * Change the title from 'What is Fizz' to 'What is Fizz Docs'. It should reflect on `localhost:8000`
     * Try adding an 'image' and 'code snippet' -- see `src/pages/overview.md`
     * Try adding a hyperlink -- paste `[Overview](../overview)` beneath 'What is Fizz Docs'
-    * Try editing site wide meta information -- open `src/gatsby-config.js` and change the value of `LANGUAGES` to `40` 
+    * Try editing site wide meta information -- open `src/gatsby-config.js` and change the value of `LANGUAGES` to `40`. Please note how this meta is referred in `what_is_fizz.md` file as `${LANGUAGES}`. Sameway you can add more meta information.
 * Add New Page: Add a new file `my_new_page.md` in `src/pages` directory with following content. 
 ```
 ---
@@ -34,3 +34,21 @@ Sample description for new page
         * `order` -- position number in navigation (4 because there were already three md files in the project).
         *  `date` -- Optional date that would be displayed on page (not supported currently)
     *  Content: Anything below second `---` in `.md` files can be written using standard markdown syntax. A good tool for writing that is [Dillinger](https://dillinger.io/)
+
+## Testing your deployable build
+* Please visit https://www.gatsbyjs.org/tutorial/part-one/#deploying-a-gatsby-site and follow the steps to quick deploy and test gatsby build.
+* The commands are following -- if you don't feel like reading ;)
+    * `$ npm install --global surge` -- install surge globally
+    * `$ surge` -- enter a username and password to create a free account
+    * `$ gatsby build` -- build gatsby production build
+    * `$ ls public` -- verify that public folder is created
+    * `surge public/` -- That's all folks. Press enter and just visit the link shown in terminal to see the sorcery
+
+
+### Todos
+
+ - Navigation in the bottom
+ - Styling with respect to fizz theme
+ 
+
+
