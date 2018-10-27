@@ -4,7 +4,7 @@ import Header from './header'
 
 const query = graphql`
 query {
-  allMarkdownRemark {
+  allMarkdownRemark(sort:{ fields: [frontmatter___order], order:ASC}) {
     totalCount
     edges {
       node {

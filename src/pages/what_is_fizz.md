@@ -1,6 +1,7 @@
 ---
 title: "What is Fizz ?"
 date: "2017-08-10"
+order: 1
 ---
 
 ## What is Fizz ?

@@ -1,7 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
-import { graphql } from "gatsby"
+import { graphql, withPrefix } from "gatsby"
 import _ from 'lodash'
+// import image from '../pages/assets/GettingStarted/01.png' // Tell Webpack this JS file uses this image
+// import { withPrefix } from 'gatsby'
+
 
 function getFinalContent(html, meta) {
   var compiled = _.template(html);
@@ -10,6 +13,7 @@ function getFinalContent(html, meta) {
   finalContent = finalContent.replace(/<\/table>/g, "</table></div>");
   return finalContent;  
 }
+
 
 
 export default({ data }) => {
@@ -22,6 +26,7 @@ export default({ data }) => {
   return (
     <Layout>
       {/* <div>{page.frontmatter.title}</div> */}
+      {/* <img src={withPrefix('/11.png')} /> */}
       <div dangerouslySetInnerHTML={{ __html: parsed }} />
     </Layout>
   )
