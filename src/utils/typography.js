@@ -6,6 +6,12 @@ fairyGateTheme.plugins = [
   new CodePlugin(),
 ];
 
+fairyGateTheme.overrideThemeStyles = ({ rhythm }, options) => ({
+  '.gatsby-highlight': {
+    background: '#272822',
+    color: 'white',
+  }
+})
 const typography = new Typography(fairyGateTheme)
 
 export default typography
